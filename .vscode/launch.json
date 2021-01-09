@@ -1,0 +1,31 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Rails server",
+            "type": "Ruby",
+            "request": "launch",
+            "program": "${workspaceRoot}/bin/rails",
+            "env": {
+                "PATH": "/Users/masuda/Development/flutter/bin:/Users/masuda/.anyenv/envs/rbenv/shims:/Users/masuda/.anyenv/envs/rbenv/bin:/Users/masuda/.anyenv/envs/nodenv/shims:/Users/masuda/.anyenv/envs/nodenv/bin:/Users/masuda/.anyenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin",
+                "GEM_HOME": "/Users/masuda/.anyenv/envs/rbenv",
+                "GEM_PATH": "/Users/masuda/.anyenv/envs/rbenv/shims",
+                "RUBY_VERSION": "ruby-2.6.5"
+            },
+            "args": [
+               "server"
+            ]
+        },
+        {
+            "name": "Listen for rdebug-ide",
+            "type": "Ruby",
+            "request": "attach",
+            "remoteHost": "127.0.0.1",
+            "remotePort": "1234",
+            "remoteWorkspaceRoot": "${workspaceRoot}"
+        }
+    ]
+}
